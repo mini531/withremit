@@ -1,0 +1,233 @@
+/* Calculator Card Styles */
+.calculator-card {
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.calc-row {
+    margin-bottom: 16px;
+}
+
+.calc-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.calc-input-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.calc-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.calc-currency,
+.calc-currency-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 12px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.calc-currency-flag {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.calc-currency-code {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.calc-rate {
+    margin: 16px 0;
+    text-align: center;
+}
+
+.calc-rate-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.calc-rate-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.calc-rate-label {
+    font-size: 12px;
+    color: #666;
+}
+
+.calc-arrow {
+    margin: 8px 0;
+}
+
+.calc-arrow svg {
+    width: 20px;
+    height: 20px;
+    color: #999;
+}
+
+.calc-result {
+    margin: 20px 0;
+    padding: 16px;
+    background: #f0fdf4;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.calc-result-label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.calc-result-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #16a34a;
+}
+
+.calc-compare {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 16px 0;
+    padding: 12px;
+    background: #eff6ff;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #1e40af;
+}
+
+.calc-compare svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.calc-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.calc-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
+}
+
+/* Currency Dropdown Styles */
+.calc-currency-dropdown {
+    position: relative;
+}
+
+.calc-currency-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 12px;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.calc-currency-btn:hover {
+    background: #ebebeb;
+}
+
+.calc-currency-arrow {
+    transition: transform 0.2s;
+}
+
+.calc-currency-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 4px;
+    padding: 8px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    min-width: 120px;
+}
+
+.calc-currency-options.active {
+    display: block;
+}
+
+.calc-currency-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.calc-currency-option:hover {
+    background: #f5f5f5;
+}
+
+.calc-currency-option img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.calc-currency-option span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .calculator-card {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
